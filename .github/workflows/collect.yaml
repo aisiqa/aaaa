@@ -69,21 +69,3 @@ jobs:
 
       - name: Timestamp
         run: date
-yaml
-name: Run Collect Task
-on:
-  schedule:
-    - cron: '0 */2 * * *'
-
-jobs:
-  run-collect:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run collect task
-        run: |
-          # 在这里添加运行 collect 任务的命令
-          ./path/to/collect
