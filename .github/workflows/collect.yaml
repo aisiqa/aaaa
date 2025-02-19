@@ -69,8 +69,8 @@ jobs:
 
       - name: Timestamp
         run: date
+yaml
 name: Run Collect Task
-
 on:
   schedule:
     - cron: '0 */2 * * *'
